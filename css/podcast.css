@@ -1,0 +1,215 @@
+.hero-section {
+    display: flex;
+    margin: 5rem;
+}
+
+.hero-section img {
+    max-width: 360px;
+    margin-right: 3rem;
+    border-radius: 2rem;
+}
+
+.hero-section h3 {
+    font-family: Dancing Script;
+    font-size: 2rem;
+    color: orangered;
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.hero-section p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.hero-section button {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 5rem;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    padding: 0.4rem 1rem;
+}
+
+/* audio */
+
+.audio-podcast-replacement h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 2rem;
+    color: orangered;
+}
+
+.listen-section {
+    border: 1px solid orange;
+    border-radius: 0.5rem;
+    padding: 5rem;
+    display: flex;
+}
+
+.listen-section li {
+    list-style-type: none;
+}
+
+.listen-section img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.download-form-section {
+    margin: 5rem 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.download-form-section img {
+    padding: 1rem;
+    width: 30rem;
+}
+
+.download-form-container h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.download-form-container i {
+    padding-left: 1rem;
+    color: darkorange;    
+}
+
+.download-form-container h3 {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.download-form {
+    margin-top: 1rem;
+}
+
+.download-form-container input {
+    width: 90%;
+    padding: 0.6rem;
+    margin: 0.3rem;
+    border: 1px solid grey;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 0.5rem;
+    border-color: #cccccc;
+}
+
+.download-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem;
+    }
+    
+    .hero-section img {
+        width: 220px;
+        height: 220px;
+    }
+
+       
+    .audio-podcast-replacement h3 {
+        color: orangered;
+    }
+    
+    .listen-section {
+        margin: 1.5rem;
+        text-align: center;
+        display: block;
+    }
+        
+    .download-form-section {
+        margin: 5rem 1rem;
+        padding: none;
+        display: flex;
+    }
+    
+    .download-form-section img {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-section {
+        display: block;
+        margin: 3rem auto;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-section img {
+        max-width: 300px;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .hero-section h3 {
+        color: orangered;
+        margin: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-section h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding-bottom: 2rem;
+    }
+    
+    .hero-section button {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .audio-podcast-replacement h3 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+    .listen-section {
+        padding: 0;
+    }
+    
+    .listen-section img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .download-form-section {
+        display: block;
+    }
+    
+    .download-form-section img {
+        width: 20rem;
+    }
+}

@@ -1,0 +1,155 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.navigation-menu {
+    position: sticky;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-icon {
+    display: none;
+}
+
+.logo {
+    padding: 1rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo span {
+    color: darkred;
+}
+
+.menu-section {
+    padding: 1rem;
+    align-items: center;
+}
+
+.menu-section ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu-section ul li a {
+    font-size: 1.3rem;
+    color: black;
+}
+
+.menu-section ul li:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s linear;
+}
+
+.menu-section a:hover {
+    color: darkred;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: darkred;
+    color: white;
+    border: 1px solid darkred;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+button:hover {
+    background-color: lightcoral;
+    border: 1px solid lightcoral;
+    color: black;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.social-section {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.footer-section {
+    margin: 3rem;
+}
+
+.footer-section p {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: initial;
+        font-size: 2rem;
+    }
+    .menu-section {
+        width: 25%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        text-align: left;
+        clip-path: circle(0% at 0% 0%);    
+        transition: 0.5s;
+    }
+        
+    .menu-section ul {
+        display: block;
+        padding: 1rem;
+    }
+
+    .menu-section ul li { 
+        font-size: 1.5rem;       
+        font-weight: 500;
+        padding: 1rem;
+    }
+
+    .menu-section a:hover,
+    .menu-section.active {
+        border-bottom: none;
+        background-color: orange;
+    }
+    
+    .menu-section.active {
+        clip-path: circle(140% at 0% 0%);
+    }
+
+    .menu-section ul li a:hover {
+        color: orangered;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu-section {
+        width: 50%;        
+    }
+        
+    .menu-section a{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}

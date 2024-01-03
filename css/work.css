@@ -1,0 +1,200 @@
+.primary-example h2 {
+    padding-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.primary-example p {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.primary-example-box {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.primary-example-box img {
+    width: 60%;
+}
+
+.primary-example-box h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.primary-example-box p {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+
+.primary-example-box a{
+    text-transform: uppercase;
+}
+
+.examples-section h3 {
+    padding: 5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.examples-boxes {
+    display: grid;
+    gap: 2rem;    
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.examples-boxes .examples-box img {
+    border-radius: 0.8rem;
+    height: 200px;
+}
+
+.examples-box {
+    position: relative;
+    top: 0;
+    opacity: 100%;
+    transition: top ease 0.5s;
+}
+
+.examples-box:hover {
+    top: -1rem;
+    opacity: 90%;
+}
+
+.view-more-work {
+    font-size: 1rem;
+    margin: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.download-form-section {
+    margin: 5rem 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.download-form-section img {
+    padding: 1rem;
+    width: 30rem;
+}
+
+.download-form-container h4 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.download-form-container i {
+    padding-left: 1rem;
+    color: darkorange;    
+}
+
+.download-form-container h3 {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.download-form {
+    margin-top: 1rem;
+}
+
+.download-form-container input {
+    width: 90%;
+    padding: 0.6rem;
+    margin: 0.3rem;
+    border: 1px solid grey;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 0.5rem;
+    border-color: #cccccc;
+}
+
+.download-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+@media (max-width: 768px) {
+    .primary-example-box {
+        display: flex;
+        padding: 3rem 1rem;
+    }
+    
+    .primary-example-box img {
+        width: 50%;
+    }    
+    
+    .examples-boxes {
+        display: grid;
+        gap: 2rem;    
+        grid-template-columns: 1fr 1fr;    
+        padding: 1rem;
+    }    
+    
+    .examples-box:hover {
+        top: -1rem;
+        opacity: 90%;
+    }
+
+    .download-form-section {
+        margin: 5rem 1rem;
+        padding: none;
+        display: flex;
+    }
+    
+    .download-form-section img {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    
+    .primary-example-box {
+        display: flex;
+        align-items: center;
+        padding: 3rem 0;
+    }
+    
+    .primary-example-box img {
+        width: 60%;
+    }
+    
+    .primary-example-box h3 {
+        font-size: 1.5rem;
+    }
+    
+    .primary-example-box p {
+        text-align: left;
+        padding: 1rem 0;
+    }
+    
+    
+    .examples-section h3 {
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    
+    .examples-boxes {
+        grid-template-columns: 1fr;    
+    }
+    
+    .download-form-section {
+        display: block;
+    }
+    
+    .download-form-section img {
+        width: 20rem;
+    }
+}
